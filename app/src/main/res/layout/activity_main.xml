@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:background="#A6B844D8"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:scaleType="centerInside"
+        android:src="@drawable/sale"
+        app:srcCompat="@drawable/sale"
+        tools:srcCompat="@drawable/sale" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Registrotion"
+        android:textColor="@color/black"
+        android:textSize="60dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:hint="Username"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/textView1"
+        android:hint="Email"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/ic_baseline_email_24"/>
+
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_centerHorizontal="true"
+        android:hint= "Phone"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/ic_baseline_phone_iphone_24"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_baseline_coronavirus_24"
+        android:layout_margin="10dp"/>
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/password"
+        android:layout_alignRight="@+id/password"
+        android:layout_margin="30dp"
+        android:text="Register" />
+
+
+</LinearLayout>
